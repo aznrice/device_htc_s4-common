@@ -17,18 +17,31 @@ lib/libacdbloader.so
 lib/libaudcal.so
 
 # Camera
+lib/hw/vendor-camera.msm8960.so
+lib/libBeautyChat.so
+lib/libcameraasd.so
 lib/libcameraface.so
 lib/libcamerapp.so
 lib/libcam_oem_plugin.so
-lib/libDxOAF.so
 lib/libgemini.so
+lib/libHTC_DIS.so
+lib/libhtccamera.so
+lib/libimage-jpeg-dec-omx-comp.so
+lib/libimage-jpeg-enc-omx-comp.so
+lib/libimage-omx-common.so
+lib/libmmcamera_faceproc.so
 lib/libmmcamera_frameproc.so
+lib/libmmcamera_hdr_lib.so
+lib/libmmcamera_image_stab.so
+lib/libmmcamera_interface2.so
 lib/libmmcamera_rawchipproc.so
-lib/libmmcamera_statsproc30.so
+lib/libmmcamera_statsproc31.so
+lib/libmmcamera_wavelet_lib.so
 lib/libmmipl.so
 lib/libmmjpeg.so
+lib/libmmmpod.so
+lib/libmmstillomx.so
 lib/liboemcamera.so
-lib/libOlaEngine.so
 lib/libposteffect.so
 
 # GPS
@@ -40,11 +53,11 @@ lib/egl/libEGL_adreno200.so
 lib/egl/libGLESv1_CM_adreno200.so
 lib/egl/libGLESv2_adreno200.so
 lib/egl/libq3dtools_adreno200.so
-lib/egl/libGLESv2S3D_adreno200.so
 lib/egl/libplayback_adreno200.so
 lib/libC2D2.so
 lib/libc2d2_z180.so
 lib/libgsl.so
+lib/libllvm-a3xx.so
 lib/libOpenCL.so
 lib/libOpenVG.so
 lib/libsc-a2xx.so
@@ -58,12 +71,7 @@ etc/firmware/leia_pm4_470.fw
 etc/firmware/vidc_1080p.fw
 
 # Media libraries
-lib/libmmosal.so
 lib/libmm-color-convertor.so
-lib/libmmparser.so
-lib/libmmparser_divxdrmlib.so
-lib/libwvm.so
-lib/libWVStreamControlAPI_L3.so
 
 # Modem firmware
 etc/firmware/modem.b00
@@ -111,12 +119,12 @@ lib/libdsutils.so
 lib/libidl.so
 lib/libqdi.so
 lib/libqdp.so
-lib/libqmi.so
 lib/libqmi_cci.so
 lib/libqmi_common_so.so
 lib/libqmi_csi.so
 lib/libqmi_encdec.so
 lib/libqmiservices.so
+lib/libqmi.so
 
 # Radio
 lib/libnetmgr.so

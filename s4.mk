@@ -45,9 +45,6 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    libloc_adapter \
-    libloc_eng \
-    libgps.utils \
     gps.msm8960
 
 # Recovery
@@ -64,11 +61,12 @@ PRODUCT_COPY_FILES += \
 
 # GPS config
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf
+    $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf
 
 # Common build properties
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.gps.qmienabled=true \
     ro.baseband.arch=msm \
     ro.product.wireless=WCN3660 \
-    ro.qualcomm.bt.hci_transport=smd
+    ro.qualcomm.bt.hci_transport=smd \
+    ro.telephony.ril.v3=skipradiooff
