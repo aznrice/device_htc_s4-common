@@ -37,6 +37,7 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01400000
 TARGET_KERNEL_VERSION := 3.4
 TARGET_KERNEL_SOURCE := kernel/htc/msm8960-3.4
+TARGET_KERNEL_CUSTOM_LINARO_TOOLCHAIN := linaro-4.7/bin/arm-eabi-
 
 # Audio
 BOARD_USES_FLUENCE_INCALL := true
