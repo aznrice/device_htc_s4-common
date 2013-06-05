@@ -145,7 +145,6 @@ esac
 # Post-setup services
 case "$target" in
     "msm8660" | "msm8960")
-        start mpdecision
         start thermald
     ;;
 esac
