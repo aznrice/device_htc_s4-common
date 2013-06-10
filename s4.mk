@@ -69,4 +69,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.baseband.arch=msm \
     ro.product.wireless=WCN3660 \
     ro.qualcomm.bt.hci_transport=smd \
-    ro.telephony.ril.v3=skipradiooff
+    ro.telephony.ril.v3=skipradiooff \
+    tunnel.decode=true
