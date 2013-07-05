@@ -132,26 +132,20 @@ case "$target" in
          #chown system /sys/devices/system/cpu/cpufreq/ondemand/sampling_rate
          #chown system /sys/devices/system/cpu/cpufreq/ondemand/sampling_down_factor
          #chown system /sys/devices/system/cpu/cpufreq/ondemand/io_is_busy
-         echo "interactive" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-         echo "interactive" > /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
-         echo "interactive" > /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
-         echo "interactive" > /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+         echo "intellidemand" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+         echo "intellidemand" > /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+         echo "intellidemand" > /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
+         echo "intellidemand" > /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
          echo 1 > /sys/devices/system/cpu/cpufreq/ondemand/io_is_busy
-         echo 384000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
-         echo 384000 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
-         echo 384000 > /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq
-         echo 384000 > /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
-         chown system /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
-         chown system /sys/devices/system/cpu/cpufreq/interactive/boost
-         chown system /sys/devices/system/cpu/cpufreq/interactive/boostpulse
-         chown system /sys/devices/system/cpu/cpufreq/interactive/boostpulse_duration
-         chown system /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
-         chown system /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
-         chown system /sys/devices/system/cpu/cpufreq/interactive/io_is_busy
-         chown system /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
-         chown system /sys/devices/system/cpu/cpufreq/interactive/target_loads
-         chown system /sys/devices/system/cpu/cpufreq/interactive/timer_rate
-         chown system /sys/devices/system/cpu/cpufreq/interactive/timer_slack
+         echo 192000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+         echo 192000 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
+         echo 192000 > /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq
+         echo 192000 > /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
+         chown system /sys/devices/system/cpu/cpufreq/intellidemand/boost
+         chown system /sys/devices/system/cpu/cpufreq/intellidemand/boostpulse
+         chown system /sys/devices/system/cpu/cpufreq/intellidemand/boosttime
+         chown system /sys/devices/system/cpu/cpufreq/intellidemand/io_is_busy
+         chown system /sys/devices/system/cpu/cpufreq/intellidemand/sampling_rate_min
          chown system /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
          chown system /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
          chown system /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq
