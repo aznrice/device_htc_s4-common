@@ -27,6 +27,9 @@
 # Inherit from common msm8960
 -include device/htc/msm8960-common/BoardConfigCommon.mk
 
+# Release tools
+TARGET_RELEASETOOLS_EXTENSIONS := device/htc/s4-common
+
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := device/htc/s4-common/include
 
@@ -37,7 +40,7 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
 TARGET_KERNEL_VERSION := 3.4
 TARGET_KERNEL_SOURCE := kernel/htc/msm8960-3.4
-TARGET_KERNEL_CUSTOM_LINARO_TOOLCHAIN := linaro-4.7/bin/arm-eabi-
+TARGET_KERNEL_CUSTOM_LINARO_TOOLCHAIN := linaro-4.8/bin/arm-eabi-
 
 # Linaro
 TARGET_USE_O3 := true
@@ -54,8 +57,7 @@ TARGET_KRAIT_BIONIC_PLDSIZE := 64
 # Audio
 BOARD_USES_FLUENCE_INCALL := true
 BOARD_USES_SEPERATED_AUDIO_INPUT := true
-BOARD_HAVE_LOW_LATENCY_AUDIO := true
-TARGET_USES_QCOM_COMPRESSED_AUDIO := true
+
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH_QCOM := true
@@ -72,15 +74,6 @@ COMMON_GLOBAL_CFLAGS += -DHTC_CAMERA_HARDWARE
 
 # GPS
 BOARD_HAVE_NEW_QC_GPS := true
-
-# Graphics
-COMMON_GLOBAL_CFLAGS += -DNEW_ION_API=1
-
-# Lights
-TARGET_PROVIDES_LIBLIGHT := true
-
-# Power
-TARGET_PROVIDES_POWERHAL := true
 
 # Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
